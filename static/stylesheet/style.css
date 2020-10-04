@@ -1,0 +1,45 @@
+h1{
+  color: green;
+  text-shadow: 4px 4px 8px blue;
+}
+
+h3{
+  color: blue;
+}
+
+.pollutants{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.img-responsive {
+    height: auto;
+    width: auto;
+    max-height: 20px;
+    max-width: 40px;
+}
+
+#profile-image{
+    height:20px;
+    width:20px;
+    float: left;
+    padding-left: 2%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+#profile-image img{
+    object-fit:cover;
+}
+nav{
+    overflow:hidden;
+}
+
+.first{
+  float:left;
+  margin-left:250px;
+  position:absolute;
+}
+.second {
+    text-align:center;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Vegetation Predictability</title>
+
+  <!-- CSS  -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+  <!-- Medium Style Editor -->
+  <script src="//cdn.jsdelivr.net/npm/medium-editor@latest/dist/js/medium-editor.min.js"></script>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/medium-editor@latest/dist/css/medium-editor.min.css" type="text/css" media="screen" charset="utf-8">
+
+  <link href="{{ url_for('static', filename='stylesheet/style.css') }}" rel="stylesheet" type="text/css" />
+   <!-- Compiled and minified JavaScript -->
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default techfont custom-navbar">
+      <div class="container">
+        <div class="nav-wrapper container">
+          <a class="navbar-brand" href="#" class="img-responsive"><img alt="Brand" src="static/images/space.jpg"></a>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a class="nav navbar-right" href="{{ url_for('notifyFarmers') }}"><button class="btn btn-default">Notify Farmers</button></a></li>
+            <li><a class="nav navbar-right" href="{{ url_for('pollution') }}"><button class="btn btn-default">Disease Prediction</button></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <h1 class="text-center" >Plantation Predictability and Suggestion</h1>
+        <h3 class="text-center" >Predicting the probability of plants which are more successful in absorption of pollutant gases with some input data like, humidity and temperatur.</h3>
+        <br>
+      </div>
+    </div>
+
+  <div class="container">
+    <div class="row">
+      <form action='/predictVegetation' method="post">
+        <div class="row">
+
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <label for="first_name"><b>Humidity</b></label>
+              <br>
+            <input placeholder="Humidity value in %" name="Temperature" id="first_name" type="text" class="validate">
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="thumbnail">
+            <label for="last_name"><b>Temperature</b></label>
+              <br>
+            <input id="last_name" name="Temperature" placeholder="Temp. in degree celcius"  type="text" class="validate">
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <label for="_name"><b>Rain Fall</b></label>
+              <br>
+            <input id="_name" name="Rain Fall" placeholder="Rain Fall in mm" type="text" class="validate">
+            </div>
+          </div>
+
+        </div>
+        <br>
+        <div class="text-center">
+            <button type="submit" class="btn-large waves-effect waves-light orange">Predict Vegetation Probability</button>
+        </div>
+      </form>
+        </div>
+        <div class="text-center">
+        <br>
+          {{predVegetation}}
+        <br>
+        </div>
+  </div>
+
+  <!--  Scripts-->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+  </body>
+</html>
