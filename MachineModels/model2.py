@@ -23,7 +23,7 @@ X = X.astype('int')
 # print(X,y)
 # splitting the data into test(30%) and training(70%)
 X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.3, random_state=0)
-model = LogisticRegression()  # calling the logistic regression model.
+model = LogisticRegression()
 
 model.fit(X_train, Y_train)   # training the model by feeding the training set as input.
 
@@ -33,12 +33,12 @@ final=[np.array(inputt)]
 b = model.predict_proba(final)
 prediction = model.predict(X_test)
 
-pickle.dump(model,open('model2.pkl','wb'))  # to create a pre compiled file
-model=pickle.load(open('model2.pkl','rb'))
+pickle.dump(model,open('model.pkl','wb'))  # to create a pre compiled file
+model=pickle.load(open('model.pkl','rb'))
 
 # cross validation
 # cv = 10, means 10 diff. experiments will be done on X and Y.
-results = model_selection.cross_val_score(model, X, Y, cv=10)
+results = model_selection.cross_val_score(model, X, Y, cv=5)
 
 # confusion matrix
 matrix = confusion_matrix(Y_test, prediction)
