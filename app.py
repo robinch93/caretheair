@@ -16,7 +16,9 @@ def pollution():
 def predictPollution():
 
     int_features=[int(x) for x in request.form.values()]
-    
+
+
+
     final=[np.array(int_features)]
     print(int_features)
     print(final)
@@ -45,7 +47,7 @@ def predictVegetation():
     if output>str(0.5):
         return render_template('vegetation.html',predVegetation='Environment is suitable for planting pollution absorbent plants. \nProbability of absorption of pollutants is  {}. \n Click on "Notify Farmers" button to send notification to concerned people. '.format(output))
     else:
-        return render_template('vegetation.html',predVegetation='Environment is suitable for planting pollution absorbent plants. \n Probability of absorption of pollutants is {}'.format(output))
+        return render_template('vegetation.html',predVegetation='Environment is not suitable for planting pollution absorbent plants. \n Probability of absorption of pollutants is {}'.format(output))
 
 @app.route('/notifyPatients')
 def notifyPatients():
