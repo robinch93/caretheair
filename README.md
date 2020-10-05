@@ -1,11 +1,6 @@
 # caretheair
 This project is an implementation of machine learning models for predictability of disease occurance and plantation predictability and suggestion based on respective input datasets. 
 
-**Prerequisite** 
-- Python
-- Atom
-- Logistic Regression
-
 **BUILD**
 - clone the repository
 - download necessary packages
