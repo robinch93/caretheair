@@ -11,7 +11,8 @@ This project is an implementation of machine learning models for predictability 
 
 **Project Demo**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/KnS79qAtBR8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[<img src="https://img.youtube.com/vi/KnS79qAtBR8/maxresdefault.jpg" width="50%">](https://youtu.be/KnS79qAtBR8)
+
 
 
 
