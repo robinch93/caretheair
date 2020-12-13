@@ -1,5 +1,5 @@
 # caretheair
-A Project made by team [NO2SO2](https://2020.spaceappschallenge.org/challenges/observe/one-health-approach/teams/no2so2/project) for [NASA International Space Apps Challenge 2020.](https://www.spaceappschallenge.org/).
+A Project made by team [NO2SO2](https://2020.spaceappschallenge.org/challenges/observe/one-health-approach/teams/no2so2/project){:target="_blank" rel="noopener"} for the [NASA International Space Apps Challenge 2020.](https://www.spaceappschallenge.org/){:target="_blank" rel="noopener"}. <br />
 This project is an implementation of machine learning models for predictability of disease occurance and plantation predictability and suggestion based on respective input datasets. 
 
 **HOW TO RUN**
