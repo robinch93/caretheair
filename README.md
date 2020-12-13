@@ -1,7 +1,8 @@
 # caretheair
+A Project made by team [NO2SO2](https://2020.spaceappschallenge.org/challenges/observe/one-health-approach/teams/no2so2/project) for [NASA International Space Apps Challenge 2020.](https://www.spaceappschallenge.org/).
 This project is an implementation of machine learning models for predictability of disease occurance and plantation predictability and suggestion based on respective input datasets. 
 
-**BUILD**
+**HOW TO RUN**
 - clone the repository
 - download necessary packages
 - run files [model1](https://github.com/robinch93/caretheair/blob/master/MachineModels/model1.py) and [model2](https://github.com/robinch93/caretheair/blob/master/MachineModels/model2.py)
